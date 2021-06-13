@@ -5,4 +5,4 @@
 
 ## Random Quote Generator
 
-[Netlify](https://randomquotegeneratorwithreactthreact.netlify.appWebs.netlify.app)
+[Netlify](https://freecodecamp-frontend-libraries-projects.vercel.app/)

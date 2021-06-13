@@ -1,3 +1,8 @@
 .container {
     background: green;
+    height: 50vh;
+    position: absolute;
+
+    left: 0;
+    right: 0;
 }
