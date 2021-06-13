@@ -1,10 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import App from "./App";
+import CalculatorProvider from "./store/CalculatorProvider";
 
 ReactDOM.render(
-  <React.StrictMode>
+  <CalculatorProvider>
     <App />
-  </React.StrictMode>,
+  </CalculatorProvider>,
   document.getElementById("root")
 );

@@ -1,6 +1,8 @@
-import React, { useReducer } from "react";
+import React, { useReducer, createContext } from "react";
 
-const CalcContext = React.createContext();
+const defaultCalcState = {
+  count: 0,
+};
 
 const resultReducer = (state, action) => {
   if (action.type === "ADD") {
@@ -13,15 +15,43 @@ const resultReducer = (state, action) => {
     return { count: state.count / action.amount };
   }
 
-  return {};
+  return defaultCalcState;
 };
 
-const CalcProvider = ({ children }) => {
-  const [result, dispatchResult] = useReducer(resultReducer, { count: 0 });
+export const CalculatorContext = createContext();
 
-  const value = { result, dispatchResult };
+const CalculatorProvider = ({ children }) => {
+  const [result, dispatchResult] = useReducer(resultReducer, defaultCalcState);
 
-  return <CalcContext.Provider value={value}>{children}</CalcContext.Provider>;
+  const add = (amount) => {
+    dispatchResult({ type: "ADD", amount });
+  };
+
+  const substract = (amount) => {
+    dispatchResult({ type: "SUBSTRACT", amount });
+  };
+
+  const multiply = (amount) => {
+    dispatchResult({ type: "SUBSTRACT", amount });
+  };
+
+  const divide = (amount) => {
+    dispatchResult({ type: "DIVIDE", amount });
+  };
+
+  const calcContext = {
+    result: result,
+    add,
+    substract,
+    multiply,
+    divide,
+  };
+
+  return (
+    <CalculatorContext.Provider value={calcContext}>
+      {children}
+    </CalculatorContext.Provider>
+  );
 };
 
-export default CalcProvider;
+export default CalculatorProvider;
