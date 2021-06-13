@@ -1,0 +1,15 @@
+.container {
+    background: #2C3E50;
+    color: white;
+    border: none;
+    margin: .5rem;
+    cursor: pointer;
+    border-radius: .3rem;
+    
+    transition: 1s;
+}
+
+.container:hover {
+    color: #2C3E50;
+    background: white;
+}

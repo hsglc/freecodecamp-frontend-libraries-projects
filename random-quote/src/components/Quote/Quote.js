@@ -31,15 +31,15 @@ function Quote() {
 
   return (
     <>
-      {!isFetched && <div>Fetching...</div>}
+      {!isFetched && <div className={classes.spinner} />}
       {isFetched && (
         <div className={classes.container}>
-          <div>
+          <div className={classes.quote_section}>
             <p>{quote.content}</p>
-            <h1>{quote.author}</h1>
+            <h4>-{quote.author}</h4>
           </div>
 
-          <div>
+          <div className={classes.buttons}>
             <TweetButton />
             <NewQuoteButton event={fetchRandomQuote} />
           </div>

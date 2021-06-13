@@ -1,0 +1,19 @@
+.layout {
+    background: #2C3E50;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.header {
+    background: white;
+    color: #2C3E50;
+    padding: 1.4rem 0;
+    font-size: 1.5rem;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 3rem;
+}

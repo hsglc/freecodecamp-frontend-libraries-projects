@@ -1,5 +1,11 @@
+import classes from "./Buttons.module.css";
+
 function NewQuoteButton({ event }) {
-  return <button onClick={event}>New Quote</button>;
+  return (
+    <button className={classes.container} onClick={event}>
+      New Quote
+    </button>
+  );
 }
 
 export default NewQuoteButton;
