@@ -1,5 +1,7 @@
+import classes from "./Button.module.css";
+
 function Button({ symbol }) {
-  return <button>{symbol}</button>;
+  return <button className={classes.button}>{symbol}</button>;
 }
 
 export default Button;

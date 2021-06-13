@@ -1,14 +1,9 @@
 import "./App.css";
-import Screen from "./components/Screen/Screen";
-import Buttons from "./components/Buttons/Buttons";
+
+import Calculator from "./components/Calculator/Calculator";
 
 function App() {
-  return (
-    <>
-      <Screen />
-      <Buttons />
-    </>
-  );
+  return <Calculator />;
 }
 
 export default App;
