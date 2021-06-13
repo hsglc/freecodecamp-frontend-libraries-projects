@@ -5,4 +5,4 @@
 
 ## Random Quote Generator
 
-[Netlify](https://freecodecamp-frontend-libraries-projects.vercel.app/)
+[Vercel](https://freecodecamp-frontend-libraries-projects.vercel.app/)
