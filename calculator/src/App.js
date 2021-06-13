@@ -1,10 +1,14 @@
 import "./App.css";
-
-import { useContext } from "react";
-import { CalculatorContext } from "./store/CalculatorProvider";
+import Screen from "./components/Screen/Screen";
+import Buttons from "./components/Buttons/Buttons";
 
 function App() {
-  return <h2>Item</h2>;
+  return (
+    <>
+      <Screen />
+      <Buttons />
+    </>
+  );
 }
 
 export default App;
