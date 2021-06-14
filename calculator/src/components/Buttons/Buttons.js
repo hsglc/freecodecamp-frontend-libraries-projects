@@ -1,10 +1,12 @@
-import symbols from "../../constants/constants";
+import { keys } from "../../constants/constants";
 import Button from "./Button/Button";
+
+import classes from "./Buttons.module.css";
 
 function Buttons() {
   return (
-    <div>
-      {symbols.map((symbol) => (
+    <div className={classes.container}>
+      {keys.map((symbol) => (
         <Button symbol={symbol} key={symbol} />
       ))}
     </div>

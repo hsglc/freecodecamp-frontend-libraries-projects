@@ -1,9 +1,11 @@
 import { CalculatorContext } from "../../store/CalculatorProvider";
 import { useContext } from "react";
-function Screen() {
-  const {result} = useContext(CalculatorContext);
+import classes from "./Screen.module.css";
 
-  return <div>{result.count}</div>;
+function Screen() {
+  const { result } = useContext(CalculatorContext);
+
+  return <div className={classes.screen}>{result.count}</div>;
 }
 
 export default Screen;

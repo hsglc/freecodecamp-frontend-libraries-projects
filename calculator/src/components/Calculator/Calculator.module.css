@@ -1,8 +1,12 @@
 .container {
-    background: green;
-    height: 50vh;
-    position: absolute;
 
-    left: 0;
-    right: 0;
+
+    height: 80vh;
+
+    width: 50%;
+    margin: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
