@@ -1,8 +1,0 @@
-.container {
-    width: 366px;
-    background: black;
-    display: flex;
-    flex-wrap: wrap;
-    border-bottom-right-radius: .5rem;
-}
-
